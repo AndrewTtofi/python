@@ -3,7 +3,7 @@ example excercises for Python
 Link:
 https://www.w3resource.com/python-exercises/python-basic-exercises.php
 """
-
+"""
 #Exercise 1
 print("Twinkle, twinkle, little star, \n\tHow I wonder what you are! \n\t\tUp above the world so high, \n\t\tLike a diamond in the sky. \nTwinkle, twinkle, little star, \n\tHow I wonder what you are!")
 
@@ -27,3 +27,9 @@ p = math.pi
 r = int(input("Hello Please enter Radius: "))
 area = p * (r*r)
 print("the Area of the circle is ",area)
+"""
+#Excercise 5
+surname=input("Please enter your surname: ")
+firstname=input("Please enter your first name: ")
+
+print("This is your name: \n", surname + firstname )
