@@ -27,9 +27,22 @@ p = math.pi
 r = int(input("Hello Please enter Radius: "))
 area = p * (r*r)
 print("the Area of the circle is ",area)
-"""
+
 #Excercise 5
 surname=input("Please enter your surname: ")
 firstname=input("Please enter your first name: ")
 
 print("This is your name: \n", surname + firstname )
+
+#Excercise 6
+values = input("Insert comma seperated values: ")
+listvalues = values.split(",")
+tupleofvalues = tuple(listvalues)
+print("The List: " ,listvalues)
+print ("The Tuple: ", tupleofvalues)
+"""
+#Excercise 7
+filename=input("Input the name of file: ")
+f_extension=filename.split(".")
+print("The extension of the file is " + repr(f_extension[-1]))
+
