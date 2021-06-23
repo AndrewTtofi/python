@@ -40,9 +40,22 @@ listvalues = values.split(",")
 tupleofvalues = tuple(listvalues)
 print("The List: " ,listvalues)
 print ("The Tuple: ", tupleofvalues)
-"""
+
 #Excercise 7
 filename=input("Input the name of file: ")
 f_extension=filename.split(".")
 print("The extension of the file is " + repr(f_extension[-1]))
+"""
+#Excercise 8
+listseven = ("Red", "Green", "White", "Black")
+print(listseven[0], " ", listseven[3])
 
+#Excercise 9
+exam_st_date = (11, 12, 2021)
+print(exam_st_date[0],"/", exam_st_date[1], "/", exam_st_date[2])
+    #or you can do the following
+for i in exam_st_date:
+    if  i<2:
+        print(i, end =" ")
+    else:
+        print(i)
