@@ -45,7 +45,7 @@ print ("The Tuple: ", tupleofvalues)
 filename=input("Input the name of file: ")
 f_extension=filename.split(".")
 print("The extension of the file is " + repr(f_extension[-1]))
-"""
+
 #Excercise 8
 listseven = ("Red", "Green", "White", "Black")
 print(listseven[0], " ", listseven[3])
@@ -59,3 +59,29 @@ for i in exam_st_date:
         print(i, end =" ")
     else:
         print(i)
+
+
+#Exercise 10
+x = int(input("Please enter the integer you want to use: "))
+n1 = int("%s%s" % (x,0) )
+n2 = int("%s%s%s" % (x,0,0))
+n3 = int("%s" % x)
+print (n1 + n2 + n3)
+
+
+#Exercise 12
+import calendar
+y =  int (input("Input the year: "))
+x = int(input("month of the year: "))
+print (calendar.month(y, x))
+"""
+#Exercise 14
+from datetime import date
+first_date = date(1994, 1, 1)
+last_date = date(2021, 7, 18)
+today_age = last_date - first_date 
+print(today_age)
+
+#Exercise 15
+
+
