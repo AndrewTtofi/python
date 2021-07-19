@@ -74,7 +74,7 @@ import calendar
 y =  int (input("Input the year: "))
 x = int(input("month of the year: "))
 print (calendar.month(y, x))
-"""
+
 #Exercise 14
 from datetime import date
 first_date = date(1994, 1, 1)
@@ -83,5 +83,64 @@ today_age = last_date - first_date
 print(today_age)
 
 #Exercise 15
+r = int(input("Please enter the radious of sphere: "))
+from math import pi
+
+volume = (4*pi*(r**3))/3
+print(volume)
+
+#Excercise 16
+x = 17
+y = int(input("Please enter an integer: "))
+if y>x:
+    abs_twice = 2*abs(y-x)
+    print(abs_twice)
+
+#Excercise 18
+n1 = int(input("Please enter number 1: "))
+n2 = int(input("Please enter number 2: "))
+n3 = int(input("Please enter number 3: "))
+if n1==n2==n3:
+    sum = 3*(n1+n2+n3)
+    print(sum)
+
+    #OR
+
+#Exercise 18 with use of a function
+def sum_three_numbers(x,y,z):
+    sum = x + y + z
+    if x == y == z:
+        sum = 3*sum
+    return sum
+
+print(sum_three_numbers(int(input("Please enter number 1: ")), int(input("Please enter number 2: ")), int(input("Please enter number 3: "))))
+print(sum_three_numbers(3, 3, 3))
+
+#Exercise 19
+def new_string(str):
+      if len(str) >= 2 and str[:2] == "Is":
+        return str
+        return "Is" + str
+
+print(new_string("Whatever"))
+print(new_string("IsEmpty"))
 
 
+#Exercise 20
+def string_multiplier (str, n):
+    outcome = ""
+    for i in range(n):
+        outcome = outcome + str +" " 
+    return outcome
+
+print(string_multiplier('test', 4 ))
+"""
+#Exercise 21
+def even_odd_number(x):
+    x = int(input("Please enter number: "))
+    if (x % 2) == 0:
+        print("Number " , x , " is an even number")
+    else:
+        print("Number " , x , " is an odd number")
+
+print(even_odd_number(1))
