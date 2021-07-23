@@ -134,7 +134,7 @@ def string_multiplier (str, n):
     return outcome
 
 print(string_multiplier('test', 4 ))
-"""
+
 #Exercise 21
 def even_odd_number(x):
     x = int(input("Please enter number: "))
@@ -144,3 +144,30 @@ def even_odd_number(x):
         print("Number " , x , " is an odd number")
 
 print(even_odd_number(1))
+
+
+#Exercise 22
+def list_counter(nums):
+    count = 0
+    for i in nums:
+        if i == 4:
+            count = count + 1
+    return count;
+
+print(list_counter([1, 22 , 4 , 4 , 4]))
+"""
+#Exercise 23
+def counter_list(str, n):
+    constant = 4
+    if constant>len(str):
+        constant = len(str)
+    substr = str[:constant]
+    result = ""
+    for i in range(n):
+        result = result + substr
+    return result
+
+print(counter_list("testing", 2))
+print(counter_list("stingagain", 4))
+print(counter_list("b", 9))
+
